@@ -38,7 +38,7 @@ gulp.task('concatBundleJS', function () {
 });
 
 gulp.task('concatJS', function () {
-	return gulp.src(['dev/js/components/*.js', 'dev/js/global/*.js']) //Concatenates the js user generated files.
+	return gulp.src(['dev/js/components/**/*.js', 'dev/js/global/**/*.js']) //Concatenates the js user generated files.
 		.pipe(concat('main.js')) //Main js file.
 		.pipe(gulp.dest('dev/js')); //Destination folder
 });
@@ -49,7 +49,7 @@ gulp.task('jsHint', function () {
 	const pkg = require('./package');
 	const jshintConfig = pkg.jshintConfig; //Loads JSHint options from package.json
 	jshintConfig.lookup = false;
-	return gulp.src(['dev/js/components/*.js', 'dev/js/global/*.js'])
+	return gulp.src(['dev/js/components/**/*.js', 'dev/js/global/**/*.js'])
 		.pipe(jshint(jshintConfig))
 		.pipe(jshint.reporter('jshint-stylish')); //Reporter for JSHint, shows up errors on a stylish way.
 });
