@@ -32,7 +32,7 @@ gulp.task('concatBundleCSS', function () {
 });
 
 gulp.task('concatBundleJS', function () {
-	return gulp.src(['node_modules/jquery/dist/jquery.js', 'ode_modules/bootstrap/dist/js/bootstrap.js']) //Concatenates the js user generated files.
+	return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js']) //Concatenates the js user generated files.
 		.pipe(concat('bundle.js')) //Main js file.
 		.pipe(gulp.dest('dev/js')); //Destination folder
 });
