@@ -106,6 +106,11 @@ gulp.task('cleanDist', [], function () {
 });
 
 //Copy minified and global files to the dist folder
+gulp.task('copyFavicon', ['cleanDist'], function () {
+	gulp.src(['dev/*.png', 'dev/*.ico', 'dev/*.xml', 'dev/*.json', 'dev/*.svg'])
+		.pipe(gulp.dest('dist/'));
+});
+
 gulp.task('copyHTML', ['cleanDist'], function () {
 	gulp.src('dev/*.html')
 		.pipe(gulp.dest('dist/'));
@@ -196,4 +201,4 @@ gulp.task('watchDist', function () {
 
 //List of task to Run via CMD or Internal Gulp Loader
 gulp.task('devBuild', ['sassCSS', 'copyBSFonts', 'concatBundleCSS', 'concatJS', 'concatBundleJS', 'jsHint', 'connectDev', 'watchDev']);
-gulp.task('distBuild', ['cleanDist', 'sassCSS', 'concatBundleCSS', 'concatJS', 'concatBundleJS', 'minifyJS', 'minifyBundleJS', 'minifyCSS', 'minifyBundleCSS', 'copyHTML', 'copyIMG', 'copyMedia', 'copyFonts', 'connectDist', 'watchDist']);
+gulp.task('distBuild', ['cleanDist', 'sassCSS', 'concatBundleCSS', 'concatJS', 'concatBundleJS', 'minifyJS', 'minifyBundleJS', 'minifyCSS', 'minifyBundleCSS', 'copyFavicon', 'copyHTML', 'copyIMG', 'copyMedia', 'copyFonts', 'connectDist', 'watchDist']);
