@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bundle.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Practice 1</title>
+</head>
+
+<body>
+    <div class="p-practice">
+        <div class="c-modal">
+            <div class="modal-background"></div>
+            <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribe-modal-label">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-label="Close"><span aria-hidden="true" data-modal-target="#subscribe-modal">&times;</span></button>
+                            <h4 class="modal-title" id="subscribe-modal-label">Newsletter Subscribe</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="c-form" novalidate>
+                                <p>Be the first to know about new arrivals, special offers, in-store eventsand last news.</p>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"><span class="required">*</span>Email:</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                                </div>
+                                <div class="form-group checkbox">
+                                    <label>
+                                    <input type="checkbox" required><span class="required">*</span>Yes, subscribe me for marketing emails!.
+                                    </label>
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" class="btn btn-primary btn-large submit-btn">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="c-nav navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active home-icon o-link"><a href="#">Home</a></li>
+                        <li class="products-icon o-link"><a href="#">Products</a></li>
+                        <li class="store-icon o-link"><a href="#">Store Finder</a></li>
+                        <li class="contact-icon o-link"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="c-hero-banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="banner-text col-xs-12">
+                        <h1>BEST STORE</h1>
+                        <p>Be the first to know about new arrivals, special offers, in-store events and last news.</p>
+                        <button type="button" class="btn btn-primary btn-large btn-open-modal" data-modal-target="#subscribe-modal">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="c-section-title container">
+            <h2>NEW COLLECTION</h2>
+        </div>
+
+        <section class="c-products container">
+            <div class="row">
+                <div class="product-card col-xs-12 col-md-4">
+                    <div class="card-content">
+                        <img src="img/products/thumbnail-women.jpg"/>
+                        <h4>Women</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus enim, laudantium quaerat officiis, nisi quos fuga modi sequi consectetur, sapiente velit impedit? Sed itaque quisquam alias inventore aliquam possimus.</p>
+                        <p><a href="#" class="btn btn-primary btn-large">Shop women</a></p>
+                    </div>
+                </div>
+
+                <div class="product-card col-xs-12 col-md-4">
+                    <div class="card-content">
+                        <img src="img/products/thumbnail-men.jpg"/>
+                        <h4>Men</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus enim, laudantium quaerat officiis, nisi quos fuga modi sequi consectetur, sapiente velit impedit? Sed itaque quisquam alias inventore aliquam possimus.</p>
+                        <p><a href="#" class="btn btn-primary btn-large">Shop men</a></p>
+                    </div>
+                </div>
+
+                <div class="product-card col-xs-12 col-md-4">
+                    <div class="card-content">
+                        <img src="img/products/thumbnail-kids.jpg"/>
+                        <h4>Kids</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus enim, laudantium quaerat officiis, nisi quos fuga modi sequi consectetur, sapiente velit impedit? Sed itaque quisquam alias inventore aliquam possimus.</p>
+                        <p><a href="#" class="btn btn-primary btn-large">Shop kids</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <p>Copyright. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

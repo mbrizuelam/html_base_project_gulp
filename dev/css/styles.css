@@ -1,0 +1,122 @@
+/* Colors */
+/* Spacing */
+/* Media Queries */
+.c-modal {
+  display: none; }
+  .c-modal .modal-background {
+    background-color: #000;
+    height: 100%;
+    opacity: .5;
+    position: fixed;
+    width: 100%;
+    z-index: 10000; }
+  .c-modal.show-modal {
+    display: block; }
+  .c-modal .modal {
+    z-index: 10001; }
+
+.c-form p {
+  margin-bottom: 30px; }
+
+.c-form .submit {
+  margin-top: 30px;
+  text-align: center; }
+
+.c-form span.required {
+  color: #FF0000;
+  margin-right: 8px; }
+
+.c-form .form-group.error {
+  color: #FF0000; }
+  .c-form .form-group.error input[type='email'] {
+    border: 1px solid #FF0000; }
+
+.c-nav.navbar-default {
+  background-color: #fff;
+  border: 0;
+  margin-bottom: 0; }
+  .c-nav.navbar-default .navbar-collapse {
+    background-color: #fff;
+    position: absolute;
+    width: 100%; }
+  .c-nav.navbar-default .navbar-toggle {
+    background-color: #fff; }
+  .c-nav.navbar-default ul li ::before {
+    font-family: 'Glyphicons Halflings';
+    padding-right: 8px; }
+  .c-nav.navbar-default ul .o-link > a {
+    color: #31383C; }
+    .c-nav.navbar-default ul .o-link > a:hover {
+      color: #337ab7; }
+  .c-nav.navbar-default ul .active > a {
+    color: #337ab7; }
+  .c-nav.navbar-default ul .home-icon ::before {
+    content: '\e021'; }
+  .c-nav.navbar-default ul .products-icon ::before {
+    content: '\e102'; }
+  .c-nav.navbar-default ul .store-icon ::before {
+    content: '\e062'; }
+  .c-nav.navbar-default ul .contact-icon ::before {
+    content: '\e111'; }
+
+@media only screen and (min-width: 768px) {
+  .c-nav.navbar-default {
+    background-color: #fff;
+    border: 0;
+    margin-bottom: 0; }
+    .c-nav.navbar-default .navbar-collapse {
+      position: inherit; } }
+
+.c-hero-banner {
+  align-items: flex-end;
+  background: url("../../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 450px;
+  padding-bottom: 30px; }
+  .c-hero-banner .banner-text {
+    color: #fff;
+    text-align: center; }
+    .c-hero-banner .banner-text h1,
+    .c-hero-banner .banner-text p {
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #333; }
+
+.c-section-title h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center; }
+
+.c-products .product-card {
+  margin-bottom: 30px; }
+  .c-products .product-card .card-content {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; }
+    .c-products .product-card .card-content img {
+      width: 100%; }
+    .c-products .product-card .card-content h4 {
+      text-align: center; }
+    .c-products .product-card .card-content p {
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px; }
+
+footer {
+  background-color: #31383C;
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+  footer p {
+    margin: 0; }
+  footer .container {
+    padding-left: 0; }
+
+@media only screen and (min-width: 768px) {
+  footer .container {
+    padding-left: 15px; } }
