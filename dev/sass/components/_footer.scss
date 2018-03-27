@@ -1,0 +1,22 @@
+footer {
+    background-color: $dark;
+    color: $white;
+    padding-bottom: $spacing-sm;
+    padding-top: $spacing-sm;
+
+    p {
+        margin: 0;
+    }
+
+    .container {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width : $md) {
+    footer {
+        .container {
+            padding-left: $spacing-sm;
+        }
+    }
+}

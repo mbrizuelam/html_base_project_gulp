@@ -1,0 +1,76 @@
+.c-nav {
+    &.navbar-default {
+        background-color: $white;
+        border: 0;
+        margin-bottom: 0;
+
+        .navbar-collapse {
+            background-color: $white;
+            position: absolute;
+            width: 100%;
+        }
+
+        .navbar-toggle {
+            background-color: $white;
+        }
+
+        ul {
+            li {
+                ::before {
+                    font-family: 'Glyphicons Halflings';
+                    padding-right: $spacing-xs;
+                }
+            }
+
+            .o-link > a {
+                color: $dark;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .active > a {
+                color: $blue;
+            }
+    
+            .home-icon {
+                ::before {
+                    content: '\e021';
+                }
+            }
+    
+            .products-icon {
+                ::before {
+                    content: '\e102';
+                }
+            }
+    
+            .store-icon {
+                ::before {
+                    content: '\e062';
+                }
+            }
+    
+            .contact-icon {
+                ::before {
+                    content: '\e111';
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : $md) {
+    .c-nav {
+        &.navbar-default {
+            background-color: $white;
+            border: 0;
+            margin-bottom: 0;
+
+            .navbar-collapse {
+                position: inherit;
+            }
+        }
+    }
+}

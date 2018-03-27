@@ -2,5 +2,11 @@
 //===========
 //Core Partials
 @import "partials/_vars.scss";
-@import "partials/_media.scss";
-//@import "components/component_name.scss"
+
+@import "components/_modal.scss";
+@import "components/_form.scss";
+@import "components/_nav_bar.scss";
+@import "components/_hero_banner.scss";
+@import "components/_section_title.scss";
+@import "components/_product_cards.scss";
+@import "components/_footer.scss";

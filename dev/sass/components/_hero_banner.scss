@@ -1,0 +1,21 @@
+.c-hero-banner {
+    align-items: flex-end;
+    background: url('../../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    height:450px;
+    padding-bottom: $spacing-lg;
+
+    .banner-text {
+        color: $white;
+        text-align: center;
+
+        h1,
+        p {
+            margin-bottom: $spacing-lg;
+            text-shadow:2px 2px $coal;
+        }
+    }
+}

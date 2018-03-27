@@ -1,0 +1,25 @@
+.c-form {
+    p {
+        margin-bottom: $spacing-lg;
+    }
+
+    .submit {
+        margin-top: $spacing-lg;
+        text-align: center;
+    }
+
+    span.required {
+        color: $red;
+        margin-right: $spacing-xs;
+    }
+
+    .form-group {
+        &.error {
+            color: $red;
+
+            input[type='email'] {
+                border: 1px solid $red;
+            }
+        }
+    }
+}

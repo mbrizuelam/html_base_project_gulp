@@ -1,0 +1,26 @@
+.c-products {
+    .product-card {
+        margin-bottom: $spacing-lg;
+
+        .card-content {
+            background-color: $gray;
+            border-bottom: 1px solid $border;
+            border-left: 1px solid $border;
+            border-right: 1px solid $border;
+
+            img {
+                width: 100%;
+            }
+    
+            h4 {
+                text-align: center;
+            }
+    
+            p {
+                margin-bottom: $spacing-lg;
+                padding-left: $spacing-sm;
+                padding-right: $spacing-sm;
+            }
+        }
+    }
+}
